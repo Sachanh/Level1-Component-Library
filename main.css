@@ -136,8 +136,7 @@
 }
 
 .ifram-resp{
-    display: flex;
-    
+    text-align: center;
 }
 
 iframe{
