@@ -966,6 +966,11 @@ h3 {
     list-style:none;
 }
 
+.sapced-list ul{
+     list-style:none;
+     display:inline-block;
+}
+
 .mobile-menu{
     display: none;
 }
