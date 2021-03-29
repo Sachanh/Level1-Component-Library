@@ -164,7 +164,7 @@ h3 {
 
 }
 
-.grid-col {
+.flex-col {
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -861,10 +861,7 @@ h3 {
 /* ----------Cards styling ------------ */
 .row{
     display:flex;
-  /*   align-items: center; */
-  /*   height: 500px; */
-  /*    flex-wrap:wrap; */
-    
+  
   }
   .card{
     padding: 1rem;
@@ -990,7 +987,7 @@ h3 {
         column-gap: 0;
         transition: all .9s ease;
     }
-    .grid-col:first-child {
+    .flex-col:first-child {
         display: none;
     }
   
