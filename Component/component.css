@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
-@import url('Component/ComponentCss/alert.css');
+@import url('ComponentCss/alert.css');
 
-@import url('Component/ComponentCss/avatar.css');
+@import url('ComponentCss/avatar.css');
 
-@import url('Component/ComponentCss/badge.css');
+@import url('ComponentCss/badge.css');
 
-@import url('Component/ComponentCss/button.css');
+@import url('ComponentCss/button.css');
 
-@import url('Component/ComponentCss/images.css');
+@import url('ComponentCss/images.css');
 
-@import url('Component/ComponentCss/card.css');
+@import url('ComponentCss/card.css');
 :root {
         --blue: #007bff;
         --indigo: #6610f2;
