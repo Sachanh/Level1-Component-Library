@@ -236,6 +236,8 @@ h3 {
     box-shadow: 2px 2px 1px 1px var(--light-green);
     position: relative;
     background-color: var(--lightcyan);
+    padding: 0.5rem 1rem;
+    
 }
 
 .info-primary-alert {
@@ -261,6 +263,7 @@ h3 {
     box-shadow: 2px 2px 1px 1px var(--light-green);
     position: relative;
     background-color: var(--tan);
+    padding: 0.5rem 1rem;
 }
 
 .secondary-alert-link {
@@ -281,6 +284,7 @@ h3 {
     box-shadow: 2px 2px 1px 1px var(--light-green);
     position: relative;
     background-color: var(--light-green);
+    padding: 0.5rem 1rem;
 }
 
 .success-alert-link {
@@ -300,6 +304,7 @@ h3 {
     box-shadow: 2px 2px 1px 1px var(--lightRed);
     position: relative;
     background-color: var(--redDark);
+    padding: 0.5rem 1rem;
 }
 
 .info-failure-alert {
