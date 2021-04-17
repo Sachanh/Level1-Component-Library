@@ -1,214 +1,202 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
 :root {
-    --main-color: #24caac;
-    --color-1: #eaa023;
-    --color-2: #e96e13;
-    --dark-800: #24292d;
-    --dark-700: #2f363e;
-    --white-900: #ffffff;
-    --white-800: rgba(255,255,255,0.8);
-    --shadow: 0 0 15px rgba(0,0,0,0.2);
+        --blue: #007bff;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #e83e8c;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #28a745;
+        --teal: #20c997;
+        --cyan: #17a2b8;
+        --white: #fff;
+        --gray: #6c757d;
+        --gray-dark: #343a40;
+        --primary: #007bff;
+        --secondary: #6c757d;
+        --success: #28a745;
+        --info: #17a2b8;
+        --warning: #ffc107;
+        --danger: #dc3545;
+        --light: #f8f9fa;
+        --dark: #343a40;
 }
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}
-
-body {
-    font-family: 'Alegreya', serif;
-    background-image: none;
-}
-
-a{
+    font-family: 'Lora', serif;
     text-decoration: none;
 }
-li{
-    list-style: none;
-}
 
 
-.header {
-    display: block;
-    background-color: var(--dark-800);
-    padding: 10px 0;
+
+.navbar {
     position: fixed;
-    left: 0;
     top: 0;
     width: 100%;
-    z-index: 99;
-    border-bottom: 1px solid var(--dark-700);
-    box-shadow: 0 8px 6px -6px;
+    font-size: 18px;
+    background-color: var(--dark);
+    border-top-color: var(--danger);
+    border-top-width: 6px;
+    padding-bottom: 10px;
+    border-style: solid;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: transparent;
+    z-index: 3;
 }
-.container {
-    max-width: 1170px;
-    margin: auto;
+.main-nav {
+    list-style-type: none;
 }
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-.header .logo {
-    padding: 0 15px;
-}
-.header .logo a {
-    font-size: 24px;
-    color: var(--white-900);
-    text-transform: capitalize;
-    font-weight: 600;
-}
-
-.nav{
-    color:var(--white-900);
-    width:50%;
-}
-.nav ul{
-    display: flex;
-    width:100%;
-    align-items: center;
-    justify-content: space-around;
-}
-.nav ul li{
-    list-style: none;
-}
-.menu-link{
+.nav-links,
+.logo {
     text-decoration: none;
-    color: var(--white-900);
+    color: var(--white);
+    font-weight: bold;
+}
+.main-nav {
+    list-style-type: none;
+    display: none;
 }
 
-
-.home-text {
-    width: 50%;
-    /* padding: 0 15px; */
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
 }
-.home-text h1 {
-    font-size: 50px;
-    color: var(--main-color);
-    text-transform: uppercase;
-    margin-left:2rem;
-    margin-top: 6rem;
-}
-.home-text h2 {
-    font-size: 24px;
-    font-weight: 300;
-    color:var(--white-900);
-    margin-left:2rem;
-    /* margin: 0 40px; */
-}
-
-
-.grid-style{
-    display: flex;
-    flex-wrap: wrap;
-    /* flex-direction: row-reverse; */
-    background-color: var(--white-900);
-    overflow-x: hidden;
-}
-.hero-image>img{
-    width: 80%;
-    height:100%;
-}
-
-
-.btn-1 {
-    margin-top: 20px;
-    background:var(--dark-700);
-    color: var(--white-900);
-}
-.btn-1:hover{
-    background-color: var(--color-2);
-}
-
-.btn{ 
+.logo {
     display: inline-block;
-    padding: 10px 30px;
-    border-radius: 30px;
-    text-transform: capitalize;
-    font-weight: 500;
-    border: 1px solid transparent;
-    transition: all 0.3s ease;
-    margin-left:2rem;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
 }
-.install{
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer; 
+    color: rgba(255,255,255,0.8);
+    font-size: 24px;
+}
+.active{
+    display: block;
+}
+
+.main-container{
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: row-reverse;
-    color: var(--white-600);
-}
-.guide {
-   grid-area: guide;
-   text-align:center;
-   margin-left: 1rem;
+    margin-top: 3em;
+    width: 100%;
 
 }
-.guide h3{
-    font-size: 30px;
-    color: var(--main-color);
-    text-transform: uppercase;
-    margin-left:2rem;
-}
-.guide p {
-    font-size: 20px;
-    font-weight: 300;
-    color:var(--dark-700);
-    border: 1px solid var(--dark-700);
-    border-radius: 20px;
-    text-align:center;
-    margin-left:2rem;
-    padding: 0.5rem;
-    margin-bottom: 2rem;
-}
-.Guide-to-install{
-    grid-area: guide-to-install;
-    text-align:center;
-    margin-bottom: 2rem;
 
+.intro-fino{
+    margin: 3em;
+    height: fit-content;
+    width: 100%;
+    text-align: center;
+    box-shadow: 5px 5px 8px var(--primary), 10px 10px 8px var(--green), 15px 15px 8px var(--gray-dark);
+}
+.brand{
+    color: var(--primary);
+    font-weight: 800;
+}
+
+.intro-para{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-weight: 500;
+    font-size: 18px;
+    position: relative;
+}
+.doc-btn{
+    padding: 0.5em;
+    border-radius: 10px;
+    background-color: var(--white);
+    border-color: var(--purple);
+    color: var(--gray-dark);
+    outline: none;
+    margin-bottom:1.5em ;
+}
+.primary{
+    background-color: lightblue;
+}
+
+
+.install-container{
+    width: 80%;
+    margin: auto;
+    height: fit-content;
+    text-align: center;
+    box-shadow: 5px 5px 8px var(--primary), 10px 10px 8px var(--green), 15px 15px 8px var(--gray-dark);
+    padding: 2em;
+    margin-bottom: 3em;
+}
+
+.ifram-resp{
+    text-align: center;
+}
+
+
+.install-container p {
+    text-align: center;
 }
 
 .footer{
-    display: flex;
-    bottom: 0;
-    align-items: center;
-    flex-direction: column;
-    gap: 1rem;
+  margin-top: 2em;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--gray-dark);
+  padding: 1em;
+}
 
-}
-.gist{
-    width: 100%;
-}
-.footer-menu ul{
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    color: var(--dark-800);
-    
-}
 .link{
-    font-size: 15px;
-    color: var(--dark-800);
+    color: var(--white);
+    padding: 0.25em;
+}
+.para a{
+    color: var(--primary);
+    font-weight: 600px;
 }
 
-@media screen and (max-width: 600px){
-    .guide h3{
-        margin-left:1rem;
-        margin-right:1.5rem;
+.para{
+    color: var(--white);
+    padding-top: 1em;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
     }
-    .guide p{
-        margin-left:1rem;
-        margin-right:1.5rem;
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
     }
-    .Guide-to-install{
-        max-width: 500px;
+    .main-nav li {
+        margin: 0;
     }
-    .iframe-resp{
-    width: 120%;
-    height: auto;
-    transform: scale(1);
-    
-}}
+    .nav-links {
+        margin-left: 40px;
+    }
+    .logo {
+        margin-top: 0;
+    }
+   .navbar-toggle {
+       display: none;
+    }
+    .logo:hover,
+    .nav-links:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+}
