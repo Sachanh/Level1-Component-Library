@@ -829,42 +829,44 @@ h3 {
 }
 
 /* ----------Cards styling ------------ */
-.row{
-    display:flex;
-  /*   align-items: center; */
-  /*   height: 500px; */
-  /*    flex-wrap:wrap; */
-    
-  }
-  .card{
-    padding: 1rem;
-    border: 1px solid black;
-    margin:1rem;
-    max-width:200px;
-    justify-content: space-between;
-   
-    }
-  
-  .card1{
-    display:flex;
-    flex-direction: column;
-    border: 1px solid black;
-    margin:1rem;
-    padding:1rem;
-  
-  }
-  .btn{
-    position:absolute;
-    margin-left:7.75rem;
-  }
-    .m{
-      position:relative;
-       }
-  .overlay{
+.card-outer-div{
+    display: flex;
+    gap: 2rem;
+
+}
+
+.normal__card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    padding: 0.5rem 1rem;
+}
+
+.normal__card img{
+    width: 100%;
+}
+
+.deleted{
+    text-decoration: line-through;
+}
+
+.offer__card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    padding: 0.5rem 1rem; 
+    position: relative;
+}
+
+.offer__card img{
+    width: 100%;
+}
+
+.offer__tag{
     position: absolute;
-    top:0px;
-    left:0px;
-  }
+    top: 5px;
+    font-size: 12px;
+}
 
 
   /* ----------modal styling --------------------- */
